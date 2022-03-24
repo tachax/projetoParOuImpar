@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Par ou Ímpar</title>
+</head>
+
+<body>
+  <div class="titulo">
+    <h1>Jogo de Par ou Ímpar</h1>
+    <h3>GANHA a melhor de 5 pontos</h3>
+  </div>
+
+  <div class="jogadores">
+    <div class="player">
+      <h4>Jogador 1:</h4>
+      <input class="input" id="jogador1" type="text" name="jogador1" value="" placeholder="digite seu nickname"/>
+      <br>
+    </div>
+
+    <div class="player">
+      <h4>Jogador 2:</h4>
+      <input class="input" id="jogador2" type="text" name="jogador2" value="" placeholder="digite seu nickname" /> <br>
+    </div>
+  </div>
+
+  <div class="botaoIniciarJogo">
+    <button id="inicio" onclick="iniciarJogo()">Iniciar Jogo</button>
+  </div>
+
+  <div id="game" class="comecarGame">
+    <div class="jogadores">
+      <div class="player">
+        <h4>Você quer par ou ímpar?</h4>
+        <select class="input" id="opcao1">
+          <option value="escolha">faça a sua escolha</option>
+          <option value="par">Par</opttion>
+          <option value="impar">Ímpar</option>
+        </select>
+        <br>
+        <h4>Escolha seu número:</h4>
+        <input class="input" id="apostaJogador1" type="password" placeholder="digite seu número" /> <br>
+        <h4 id="pontosJogador1">Pontos: 0</h4>
+      </div>
+
+      <div class="player">
+        <h4>Você quer par ou ímpar?</h4>
+        <select class="input" id="opcao2">
+          <option value="escolha">faça a sua escolha</option>
+          <option value="par">Par</opttion>
+          <option value="impar">Ímpar</option>
+        </select>
+        <br>
+        <h4>Escolha seu número:</h4>
+        <input class="input" id="apostaJogador2" type="password" placeholder="digite seu número" /> <br>
+        <h4 id="pontosJogador2">Pontos: 0</h4>
+      </div>
+    </div>
+
+    <div id="game" class="botaoJogar">
+      <button id="botaoJogar" onclick="jogar()">Jogar</button>
+    </div>
+
+    <div class="resultado">
+      <p id="rodada"></p>
+      <p id="somaJogadas"></p>
+      <p id="resultado"></p>
+    </div>
+  </div>
+
+  <div id="parabens" class="parabens">
+    <p id="mensagemVencedor"></p>
+    <img id="imagemVencedor" src="">
+  </div>
+
+</body>
+
+</html>

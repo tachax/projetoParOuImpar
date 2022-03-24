@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(270deg, #0d4b4b 27.26%, #20B2AA 96.03%);
+}
+
+.titulo {
+  background-color: whitesmoke;
+  margin: 20px 200px 10px 200px;
+  border-radius: 10px;
+}
+
+.jogadores{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.1rem;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 8px;
+  color: whitesmoke;
+  background-color: #d16940;
+  border-radius: 6px;
+  border: solid 2px whitesmoke;
+  cursor: pointer;
+}
+
+.botaoIniciarJogo {
+ margin-top: -25px;
+ margin-bottom: 15px;
+}
+
+.comecarGame {
+  display: none;
+  flex-direction: column;
+}
+
+h4 {
+  font-size: 19px;
+  font-family: 'Cambria';
+}
+
+h3 {
+  color: rgb(126, 90, 90);
+}
+
+.input {
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.botaoJogar {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.resultado {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.parabens {
+  flex-direction: column;
+  text-align: center;
+  row-gap: 10px;
+  font-size: 25px;
+}
+
+img {
+ max-height: 400px;
+ max-width: 400px;
+ margin: auto;
+ border-radius: 30px;
+}
